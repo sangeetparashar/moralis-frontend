@@ -13,12 +13,19 @@ const client = createClient({
   autoConnect: true,
 });
 
-const config = {
-  initialColorMode: 'dark',
-  useSystemColorMode: false,
-};
-
-const theme = extendTheme({ config });
+const theme = extendTheme({
+  config: {
+    useSystemColorMode: false,
+    initialColorMode: 'dark',
+  },
+  styles: {
+    global: {
+      'html, body': {
+        background: '#2d2c2c',
+      },
+    },
+  },
+});
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
