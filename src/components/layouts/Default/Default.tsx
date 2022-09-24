@@ -10,7 +10,7 @@ const Default: FC<{ children: ReactNode; pageName: string }> = ({ children, page
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <Header />
-    <Container maxW="container.lg" p={3} marginTop={100} as="main" minH="70vh">
+    <Container maxW="container.lg" p={3} marginTop={100} as="main" minH="70vh" backgroundColor={"rgb(45,44,44"}>
       {children}
     </Container>
     <Footer />
